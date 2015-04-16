@@ -8,12 +8,12 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s
+ * @package The Beauty
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div id="primary" class="col-lg-9 col-md-6 col-sm-12 content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -41,6 +41,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+<div class="col-lg-3 col-md-6 col-sm-12">
+	<?php get_sidebar(); ?>  
+</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
